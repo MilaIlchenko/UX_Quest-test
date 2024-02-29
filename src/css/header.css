@@ -51,7 +51,16 @@ color: #fff;
   display: flex;
   gap: 24px;
   margin-right: 36px;
+  align-items: center;
 }
+
+.nav_button{
+background-color: transparent;
+border: none;
+cursor: pointer;
+color: #fff;
+}
+
 .nav_link {
   display: block;
   padding: 27px 0;
@@ -66,7 +75,40 @@ color: #fff;
 .header_link {
   display: none;
 }
+.backdrop {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  transform: translate(-50%, -50%);
+    top: 7%;
+    left: 38%;
+    width: 94px;
+ 
+background: #f4f4f4;
+padding: 36px 19px 46px;
 
+}
+.modal-close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
     
   
 }
